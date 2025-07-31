@@ -1,10 +1,10 @@
-# --- Python (VS Code) ---
+# --- Python ---
 __pycache__/
 *.py[cod]
 .vscode/
 *.env
 
-# --- Java (VS Code) ---
+# --- Java ---
 bin/
 build/
 *.class
@@ -13,14 +13,32 @@ build/
 *.war
 *.ear
 
-# --- C# (Visual Studio 2022) ---
+# --- C# Visual Studio ---
 .vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
 bin/
+bin/Debug/
+bin/Release/
 obj/
+obj/Debug/
+obj/Release/
+
+*.csproj
+*.sln
+
 *.exe
 *.dll
 *.pdb
+
+*.log
+*.cache
+*.ilk
+*.meta
+*.idb
+*.ipch
+
+ListGenerator-Csharp/v17/
