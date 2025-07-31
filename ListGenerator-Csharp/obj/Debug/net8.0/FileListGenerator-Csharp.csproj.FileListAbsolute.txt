@@ -1,0 +1,14 @@
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\bin\Debug\net8.0\FileListGenerator-Csharp.exe
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\bin\Debug\net8.0\FileListGenerator-Csharp.deps.json
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\bin\Debug\net8.0\FileListGenerator-Csharp.runtimeconfig.json
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\bin\Debug\net8.0\FileListGenerator-Csharp.dll
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\bin\Debug\net8.0\FileListGenerator-Csharp.pdb
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.AssemblyInfoInputs.cache
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.AssemblyInfo.cs
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.dll
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\refint\FileListGenerator-Csharp.dll
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.pdb
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\FileListGenerator-Csharp.genruntimeconfig.cache
+C:\Users\laboratorio\source\repos\FileListGenerator-Csharp\obj\Debug\net8.0\ref\FileListGenerator-Csharp.dll
