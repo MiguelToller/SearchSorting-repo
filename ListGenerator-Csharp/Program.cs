@@ -15,7 +15,7 @@
             Util.ExibirLista(listaPalavras);
             */
 
-            string caminhoArquivo = "arquivo.txt";
+            string caminhoArquivo = "ListGenerator-Csharp/arquivo.txt";
 
             Util.PopularNumeroDeArquivo(caminhoArquivo, 5, 0, 10);
             Util.LerArquivo(caminhoArquivo);

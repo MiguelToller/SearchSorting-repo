@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ListGenerator-Csharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+553989ff88cbcbc469de89cd093d1fbf85732611")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f46eedaf066890e9c7c212bc883c20f0a124a530")]
 [assembly: System.Reflection.AssemblyProductAttribute("ListGenerator-Csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ListGenerator-Csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
