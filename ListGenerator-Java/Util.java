@@ -121,4 +121,20 @@ public class Util {
         }
     }
 
+    /**
+     * método de classe popula uma lista ordenada
+     * @param lista
+     * @param quantidade
+     * @param inicio
+     * @param fim
+     */
+    public static void popularNumerosOrdenado(ArrayList<Integer> lista, long quantidade, int inicio, int fim) {
+        int numero = inicio;
+
+        for(; quantidade > 0; quantidade--) {
+            lista.add(numero);
+            numero += 1;
+        }
+    }
+
 }
