@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\",
+  "WorkspaceRootPath": "C:\\Users\\laboratorio\\Desktop\\SearchSorting-repo\\ListGenerator-Csharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|c:\\users\\laboratorio\\source\\repos\\filelistgenerator-csharp\\listgenerator-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|solutionrelative:listgenerator-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|c:\\users\\laboratorio\\desktop\\searchsorting-repo\\listgenerator-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|FileListGenerator-Csharp.csproj|c:\\users\\laboratorio\\source\\repos\\filelistgenerator-csharp\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|FileListGenerator-Csharp.csproj|solutionrelative:util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|FileListGenerator-Csharp.csproj|c:\\users\\laboratorio\\source\\repos\\filelistgenerator-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|FileListGenerator-Csharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|c:\\users\\laboratorio\\desktop\\searchsorting-repo\\listgenerator-csharp\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46E0A87D-0BA6-44E3-9745-2AE773598957}|ListGenerator-Csharp.csproj|solutionrelative:util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListGenerator-Csharp",
-              "DocumentMoniker": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\ListGenerator-Csharp.csproj",
-              "RelativeDocumentMoniker": "ListGenerator-Csharp.csproj",
-              "ToolTip": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\ListGenerator-Csharp.csproj",
-              "RelativeToolTip": "ListGenerator-Csharp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-31T13:41:50.398Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Util.cs",
-              "DocumentMoniker": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\Util.cs",
+              "DocumentMoniker": "C:\\Users\\laboratorio\\Desktop\\SearchSorting-repo\\ListGenerator-Csharp\\Util.cs",
               "RelativeDocumentMoniker": "Util.cs",
-              "ToolTip": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\Util.cs",
+              "ToolTip": "C:\\Users\\laboratorio\\Desktop\\SearchSorting-repo\\ListGenerator-Csharp\\Util.cs",
               "RelativeToolTip": "Util.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAiwJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T12:51:42.163Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\laboratorio\\Desktop\\SearchSorting-repo\\ListGenerator-Csharp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\laboratorio\\source\\repos\\FileListGenerator-Csharp\\Program.cs",
+              "ToolTip": "C:\\Users\\laboratorio\\Desktop\\SearchSorting-repo\\ListGenerator-Csharp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T12:50:05.402Z",
               "EditorCaption": ""

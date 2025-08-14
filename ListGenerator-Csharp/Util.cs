@@ -66,5 +66,87 @@ namespace ListGenerator_Csharp
                 Console.WriteLine(item);
             }
         }
+
+        /// <summary>
+        /// método de classe que popula um arquivo com números inteiros aleatórios
+        /// </summary>
+        /// <param name="caminhoArquivo"></param>
+        /// <param name="quantidade"></param>
+        /// <param name="inicio"></param>
+        /// <param name="fim"></param>
+        public static void PopularNumeroDeArquivo(string caminhoArquivo, long quantidade, int inicio, int fim)
+        {
+            Random gerador = new Random();
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(caminhoArquivo))
+                    for (; quantidade > 0; quantidade--)
+                    {
+                        int numero = gerador.Next(inicio, fim);
+                        writer.WriteLine(numero);
+                    }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+        /// <summary>
+        /// método de classe que popula um arquivo com palavras aleatórias
+        /// </summary>
+        /// <param name="caminhoArquivo"></param>
+        /// <param name="quantidade"></param>
+        /// <param name="tamanho"></param>
+        public static void PopularPalavrasDeArquivo(string caminhoArquivo, long quantidade, int tamanho)
+        {
+            string letras = "abcdefghijklmnopqrstuvwxyz ";
+            Random gerador = new Random();
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(caminhoArquivo))
+                    for (; quantidade > 0; quantidade--)
+                    {
+                        string palavraGerada = "";
+                        char letraSorteada;
+
+                        for (int i = 0; i < tamanho; i++)
+                        {
+                            letraSorteada = letras[gerador.Next(letras.Length)];
+                            palavraGerada += letraSorteada;
+                        }
+                        writer.WriteLine(palavraGerada);
+                    }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+        /// <summary>
+        /// método de classe que lê o conteúdo de um arquivo .txt
+        /// </summary>
+        /// <param name="caminhoArquivo"></param>
+        public static void LerArquivo(string caminhoArquivo)
+        {
+            try
+            {
+                using (StreamReader reader = new StreamReader(caminhoArquivo))
+                {
+                    string linha;
+                    while ((linha = reader.ReadLine()) != null)
+                    {
+                        Console.WriteLine(linha);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
     }
 }
