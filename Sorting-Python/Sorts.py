@@ -118,8 +118,9 @@ class Sorts:
 
         return qtd_comparacoes, qtd_trocas
     
-    def shell(vetor):
-        n = len(vetor)
+    @staticmethod
+    def shell(lista):
+        n = len(lista)
         qtd_comparacoes = 0
         qtd_trocas = 0
         distancia = 1
@@ -133,19 +134,19 @@ class Sorts:
             distancia = distancia // referencia_tamanho
 
             for i in range(distancia, n):
-                tmp = vetor[i]
+                tmp = lista[i]
                 j = i - distancia
                 while j >= 0:
                     qtd_comparacoes += 1
-                    if tmp < vetor[j]:
-                        vetor[j + distancia] = vetor[j]
+                    if tmp < lista[j]:
+                        lista[j + distancia] = lista[j]
                         qtd_trocas += 1
                         j -= distancia
                     else:
                         break
-                vetor[j + distancia] = tmp
+                lista[j + distancia] = tmp
                 qtd_trocas += 1
 
-        print("Quantidade de comparações:", qtd_comparacoes)
+        print("Quantidade de comparacoes:", qtd_comparacoes)
         print("Quantidade de trocas:", qtd_trocas)
-        return vetor
+        return qtd_comparacoes, qtd_trocas

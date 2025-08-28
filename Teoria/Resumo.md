@@ -241,3 +241,46 @@ void pente(List<> lista) {
     } while (houveTroca || distancia > 1);
 }
 ```
+
+6) SHELLSORT 
+    É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)
+    Instável 
+    Memória Interna
+
+    Não é adequado para listas encadeadas
+
+n = 7
+0   1   2   3   4   5   6   
+7   1   4   2   3   9   8       distancia = 4
+
+```c#
+void shell(Lista<> lista) {
+    int i, j;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+    int distancia = 1;
+
+    int referenciaTamanho = 3;
+
+    do {
+        distancia = referenciaTamanho * distancia + 1;
+    } while (distancia < n);
+    
+    do {
+        distancia = (int)(distancia / referenciaTamanho);
+        
+        for (i = distancia; i < n; i++) {
+            tmp = vetor[i];
+            for (j = i - distancia; j >= 0; j = j - distancia) {
+                qtdComparacoes++;
+                if (tmp < vetor[j]) {
+                    vetor[j + distancia] = vetor[j];
+                    qtdTrocas++;
+                } else break;
+            }
+            vetor[j + distancia] = tmp;
+            qtdTrocas++;
+        }
+    } while (distancia > 1);
+}
+```

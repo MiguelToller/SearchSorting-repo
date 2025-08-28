@@ -50,6 +50,14 @@ public class Main {
         tempoFim = System.nanoTime();
         System.out.println("Tempo (ms) rotina 6: " + (tempoFim - tempoInicio) / 1000000.0);
 
+        // Teste do algoritmo de ordenacao por shell
+        System.out.println("Sort Shell");
+        List<Integer> lista7 = gerarLista(lista,10000);
+        tempoInicio = System.nanoTime();
+        Sorts.insercao(lista7);
+        tempoFim = System.nanoTime();
+        System.out.println("Tempo (ms) rotina 7: " + (tempoFim - tempoInicio) / 1000000.0);
+
         // Teste do algoritmo de ordenacao padrao (Java)
         System.out.println("Sort Padrao");
         List<Integer> lista1 = gerarLista(lista,10000);

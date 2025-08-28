@@ -171,4 +171,38 @@ public class Sorts {
         System.out.println("Quantidade de trocas: " + qtdTrocas);
     }
 
+    public static void shell(List<Integer> lista) {
+        int i, j;
+        int tmp;
+        int qtdComparacoes = 0, qtdTrocas = 0;
+        int distancia = 1;
+
+        int referenciaTamanho = 3;
+
+        do {
+            distancia = referenciaTamanho * distancia + 1;
+        } while (distancia < lista.size());
+        
+        do {
+            distancia = (int)(distancia / referenciaTamanho);
+            
+            for (i = distancia; i < lista.size(); i++) {
+                tmp = lista.get(i);
+                for (j = i - distancia; j >= 0; j = j - distancia) {
+                    qtdComparacoes++;
+                    if (tmp < lista.get(j)) {
+                        lista.set(j + distancia, lista.get(j));
+                        qtdTrocas++;
+                    } else break;
+                }
+                lista.set(j + distancia, tmp);
+                qtdTrocas++;
+            }
+        } while (distancia > 1);
+
+        System.out.println("Quantidade de comparações: " + qtdComparacoes);
+        System.out.println("Quantidade de trocas: " + qtdTrocas);
+
+    }
+
 }
