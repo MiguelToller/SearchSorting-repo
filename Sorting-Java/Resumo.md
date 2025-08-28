@@ -1,6 +1,6 @@
 # Métodos de Ordenação
 
-## 1) BOLHA - Bubble Sort
+## BOLHA - Bubble Sort
 - Estável  
 - Memória Interna  
 - Alta complexidade (muito esforço) - O(n^2)  
@@ -12,10 +12,10 @@ Trabalha com o conceito de trocas, ou seja, enquanto houver trocas, o algoritmo 
 
 **Observação:** se a estrutura estiver ordenada ou quase, o bolha terá excelente desempenho.  
 
-0 1 2 3 4 5 6
-7 1 4 2 3 9 8
-1 4 2 3 7 8 9
-1 2 3 4 7 8 9
+0 1 2 3 4 5 6  
+7 1 4 2 3 9 8  
+1 4 2 3 7 8 9  
+1 2 3 4 7 8 9  
 1 2 3 4 7 8 9
 
 ```java
@@ -40,7 +40,7 @@ void bolha(List<> lista) {
 }
 ```
 
-## 2) SELEÇÃO - Selection Sort
+## SELEÇÃO - Selection Sort
 - Instável
 - Memória Interna
 - Alta complexidade (muito esforço) - O(n^2)
@@ -52,14 +52,14 @@ o início da estrutura
 
 **Observação:** se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada.
 
-0   1   2   3   4   5   6    posMenor = 1
-7   1   4   2   3   9   8
-1   7   4   2   3   9   8
-1   2   4   7   3   9   8
-1   2   3   7   4   9   8
-1   2   3   4   7   9   8
-1   2   3   4   7   9   8
-1   2   3   4   7   8   9
+0   1   2   3   4   5   6    posMenor = 1  
+7   1   4   2   3   9   8  
+1   7   4   2   3   9   8  
+1   2   4   7   3   9   8  
+1   2   3   7   4   9   8  
+1   2   3   4   7   9   8  
+1   2   3   4   7   9   8  
+1   2   3   4   7   8   9  
 1   2   3   4   7   8   9  
 
 ```java
@@ -84,7 +84,7 @@ void selecao(List<> lista) {
 }
 ```
 
-## 3) INSERÇÃO - Insertion Sort - O(n^2)
+## INSERÇÃO - Insertion Sort - O(n^2)
 - Estável
 - Memória Interna
 - Alta complexidade - O(n^2)
@@ -95,13 +95,13 @@ Trabalha com o conceito de inserção na porção inicial, com isso, pode diminu
 
 **Observação:** i) se a estrutura estiver ordenada ou quase, o inserção terá excelente desempenho
 
-0   1   2   3   4   5   6
-7   1   4   2   3   9   8
-1   7   4   2   3   9   8
-1   4   7   2   3   9   8
-1   2   4   7   3   9   8
-1   2   3   4   7   9   8
-1   2   3   4   7   9   8
+0   1   2   3   4   5   6  
+7   1   4   2   3   9   8  
+1   7   4   2   3   9   8  
+1   4   7   2   3   9   8  
+1   2   4   7   3   9   8  
+1   2   3   4   7   9   8  
+1   2   3   4   7   9   8  
 1   2   3   4   7   8   9   
 
 ```java
@@ -125,5 +125,5 @@ void insercao(Lista<> lista) {
 }
 ```
 
-Qual o melhor método de ordenação?
-Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
+## Qual o melhor método de ordenação?
+**Depende:** tamanho da estrutura; de como a estrutura já está previamente ordenada;
