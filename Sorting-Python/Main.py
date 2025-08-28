@@ -9,6 +9,7 @@ lista_selecao = []
 lista_insercao = []
 lista_agitacao = []
 lista_pente = []
+lista_shell = []
 
 tamanho = 10000
 
@@ -17,6 +18,8 @@ lista_normal.extend(lista_bolha)
 lista_selecao.extend(lista_bolha)
 lista_insercao.extend(lista_bolha)
 lista_agitacao.extend(lista_bolha)
+lista_pente.extend(lista_bolha)
+lista_shell.extend(lista_bolha)
 
 # Sort
 tempoInicio = time.perf_counter()
@@ -68,5 +71,14 @@ qtd_comparacoes, qtd_trocas = Sorts.pente(lista_pente)
 tempoFim = time.perf_counter()
 tempo_pente = tempoFim - tempoInicio
 print("Tempo da rotina ordenar por pente: ", tempo_pente , "s")      
+print('Comparacoes:', qtd_comparacoes)  
+print('Trocas:', qtd_trocas)  
+
+# Shell
+tempoInicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Sorts.shell(lista_shell)
+tempoFim = time.perf_counter()
+tempo_shell = tempoFim - tempoInicio
+print("Tempo da rotina ordenar por shell: ", tempo_shell , "s")      
 print('Comparacoes:', qtd_comparacoes)  
 print('Trocas:', qtd_trocas)  

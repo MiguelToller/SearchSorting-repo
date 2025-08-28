@@ -117,3 +117,35 @@ class Sorts:
                     houve_troca = True  
 
         return qtd_comparacoes, qtd_trocas
+    
+    def shell(vetor):
+        n = len(vetor)
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+        distancia = 1
+        referencia_tamanho = 3
+
+        # Calcula o gap inicial usando a sequência de Knuth
+        while distancia < n:
+            distancia = referencia_tamanho * distancia + 1
+
+        while distancia > 1:
+            distancia = distancia // referencia_tamanho
+
+            for i in range(distancia, n):
+                tmp = vetor[i]
+                j = i - distancia
+                while j >= 0:
+                    qtd_comparacoes += 1
+                    if tmp < vetor[j]:
+                        vetor[j + distancia] = vetor[j]
+                        qtd_trocas += 1
+                        j -= distancia
+                    else:
+                        break
+                vetor[j + distancia] = tmp
+                qtd_trocas += 1
+
+        print("Quantidade de comparações:", qtd_comparacoes)
+        print("Quantidade de trocas:", qtd_trocas)
+        return vetor
