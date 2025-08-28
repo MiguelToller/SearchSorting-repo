@@ -242,12 +242,11 @@ void pente(List<> lista) {
 }
 ```
 
-6) SHELLSORT 
-    É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)
-    Instável 
-    Memória Interna
-
-    Não é adequado para listas encadeadas
+## SHELLSORT 
+- É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)
+- Instável 
+- Memória Interna
+- Não é adequado para listas encadeadas
 
 n = 7
 0   1   2   3   4   5   6   
