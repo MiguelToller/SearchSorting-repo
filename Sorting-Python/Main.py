@@ -8,6 +8,7 @@ lista_normal = []
 lista_selecao = []
 lista_insercao = []
 lista_agitacao = []
+lista_pente = []
 
 tamanho = 10000
 
@@ -58,5 +59,14 @@ qtd_comparacoes, qtd_trocas = Sorts.agitacao(lista_agitacao)
 tempoFim = time.perf_counter()
 tempo_agitacao = tempoFim - tempoInicio
 print("Tempo da rotina ordenar por agitacao: ", tempo_agitacao , "s")      
+print('Comparacoes:', qtd_comparacoes)  
+print('Trocas:', qtd_trocas)  
+
+# Pente
+tempoInicio = time.perf_counter()
+qtd_comparacoes, qtd_trocas = Sorts.pente(lista_pente)
+tempoFim = time.perf_counter()
+tempo_pente = tempoFim - tempoInicio
+print("Tempo da rotina ordenar por pente: ", tempo_pente , "s")      
 print('Comparacoes:', qtd_comparacoes)  
 print('Trocas:', qtd_trocas)  

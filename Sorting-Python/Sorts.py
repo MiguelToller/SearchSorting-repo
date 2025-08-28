@@ -95,3 +95,25 @@ class Sorts:
             inicio += 1
 
         return qtd_comparacoes, qtd_trocas
+    
+    @staticmethod
+    def pente(lista):
+        houve_troca = True
+        distancia = len(lista)
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+
+        while houve_troca or distancia > 1:
+            # Determina a distancia
+            distancia = max(1, int(distancia / 1.3))
+            houve_troca = False
+
+            # Percorre a lista comparando os elementos separados pela distancia
+            for i in range(len(lista) - distancia):
+                qtd_comparacoes += 1
+                if lista[i] > lista[i + distancia]:
+                    lista[i], lista[i + distancia] = lista[i + distancia], lista[i]
+                    qtd_trocas += 1
+                    houve_troca = True  
+
+        return qtd_comparacoes, qtd_trocas
