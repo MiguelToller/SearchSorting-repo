@@ -4,7 +4,7 @@ Ordenar estruturas de dados é importante para melhorar o desempenho e a eficiê
 
 ## Explique o que é estabilidade e complexidade, quais métodos estudados são estáveis e instáveis?
 Um algoritmo de ordenação é estável quando ele mantém a ordem relativa dos elementos com valores iguais.
-A complexidade mede o desempenho do algoritmo, especialmente em termos de tempo de execução e uso de memória.
+A complexidade mede esforço computacional, especialmente em termos de tempo de execução e uso de memória.
 
 ## Dos métodos estudados, quais suas complexidades? Como é avaliada a complexidade de um método de ordenação?
 | Método           | Memória          | Estabilidade | Complexidade           | Porção Ordenada |
