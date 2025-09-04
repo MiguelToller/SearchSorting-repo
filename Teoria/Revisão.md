@@ -30,6 +30,17 @@ Comb Sort é uma melhoria do Bubble Sort, mas ainda é O(n²) no pior caso — n
 ## Faça um método na sua linguagem de preferência que retorne true/True se a lista enviada como parâmetro está ordenada, o false/False caso contrário
 
 ``` python
+def esta_ordenado(lista):
+    for i in range(0, len(lista)-1):
+        if lista[i] > lista[i+1]:
+            return False
+    return True
+        
+```
+
+## Método de Ordenação Bolha
+
+``` python
     @staticmethod
     def bolha(lista):
         houve_troca = True
