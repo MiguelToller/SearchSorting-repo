@@ -117,3 +117,36 @@ class Sorts:
                 lista[j + distancia] = tmp
                 qtd_trocas += 1
         return qtd_comparacoes, qtd_trocas
+    
+    @staticmethod
+    def quicksort(lista):
+        qtd_comparacoes = 0
+        qtd_trocas = 0
+
+        def _quicksort(lista, inicio, fim):
+            nonlocal qtd_comparacoes, qtd_trocas
+            if inicio < fim:
+                pivo, comp, troc = partition(lista, inicio, fim)
+                qtd_comparacoes += comp
+                qtd_trocas += troc
+                _quicksort(lista, inicio, pivo - 1)
+                _quicksort(lista, pivo + 1, fim)
+
+        def partition(lista, inicio, fim):
+            comp = 0
+            troc = 0
+            pivo = lista[fim]
+            i = inicio - 1
+            for j in range(inicio, fim):
+                comp += 1
+                if lista[j] <= pivo:
+                    i += 1
+                    lista[i], lista[j] = lista[j], lista[i]
+                    troc += 1
+            lista[i + 1], lista[fim] = lista[fim], lista[i + 1]
+            troc += 1
+            return i + 1, comp, troc
+
+        _quicksort(lista, 0, len(lista) - 1)
+        return qtd_comparacoes, qtd_trocas
+

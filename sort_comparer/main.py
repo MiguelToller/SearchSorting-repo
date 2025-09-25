@@ -11,7 +11,8 @@ metodos = {
     "Inserção": Sorts.insercao,
     "Agitação": Sorts.agitacao,
     "Pente": Sorts.pente,
-    "Shell": Sorts.shell
+    "Shell": Sorts.shell,
+    "Quick": Sorts.quicksort
 }
 
 def selecionar_arquivo():
