@@ -1,0 +1,38 @@
+# Heap Sort
+
+## Conceito
+O **Heap Sort** é um algoritmo de ordenação baseado na estrutura de dados **Heap** (normalmente um **heap máximo**).  
+Ele organiza os elementos em uma árvore binária completa, garantindo que cada nó pai seja maior (ou menor, no caso de heap mínimo) que seus filhos.  
+
+## Etapas do Algoritmo
+1. **Construção do Heap**  
+   - A partir do array original, transforma-o em um **heap máximo**.
+2. **Extração do Maior Elemento**  
+   - O maior elemento (na raiz do heap) é trocado com o último elemento da lista.
+3. **Redução do Heap**  
+   - O tamanho do heap é reduzido em 1 e o heap é ajustado (heapify) para manter a propriedade de heap.
+4. **Repetição**  
+   - Repete o processo até que todos os elementos estejam ordenados.
+
+## Complexidade
+- **Tempo (pior, médio e melhor caso):** `O(n log n)`  
+- **Espaço:** `O(1)` (algoritmo **in-place**)  
+- **Estável:** Não (a ordem relativa de elementos iguais pode ser alterada)
+
+## Vantagens
+- Desempenho garantido em `O(n log n)` em todos os casos.  
+- Não necessita de memória extra significativa.  
+
+## Desvantagens
+- Não é estável.  
+- Em alguns casos, pode ser menos eficiente que **Merge Sort** ou **Quick Sort** na prática.  
+
+## Exemplo de Estrutura (Heap Máximo)
+
+       50
+     /    \
+   30      40
+  /  \    /  \
+10   20  35   25
+
+Neste exemplo, a raiz (50) é sempre o maior elemento.
