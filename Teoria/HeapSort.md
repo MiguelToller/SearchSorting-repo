@@ -29,10 +29,12 @@ Ele organiza os elementos em uma árvore binária completa, garantindo que cada 
 
 ## Exemplo de Estrutura (Heap Máximo)
 
+```
        50
      /    \
    30      40
   /  \    /  \
 10   20  35   25
+```
 
 Neste exemplo, a raiz (50) é sempre o maior elemento.
